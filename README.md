@@ -18,7 +18,7 @@ Element's type of list can be str or int.
 
 There is `colorChanged(QColor)` signal to detect the color of box changed.
 
-## Example
+## Preview
 
 ![colorButtonExample](./example/colorButtonExample.png)
 
