@@ -1,5 +1,5 @@
 # color-button
-circle-shaped color button
+Circle-shaped color button
 
 ## Class and method overview
 
