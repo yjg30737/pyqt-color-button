@@ -17,10 +17,13 @@ class ColorButton(QPushButton):
                            + 'background-color:' + color + '; }')
 
     def setColor(self, rgb):
-        r = int(rgb[0])
-        g = int(rgb[1])
-        b = int(rgb[2])
-        self.__color = QColor(r, g, b)
+        if isinstance(rgb, tuple):
+            r = int(rgb[0])
+            g = int(rgb[1])
+            b = int(rgb[2])
+            self.__color = QColor(r, g, b)
+        elif isinstance(rgb, QColor):
+            self.__color = rgb
         self.setStyleSheet(self.styleSheet()[:-1] + 'background:' + self.__color.name() + ';}')
         self.colorChanged.emit(self.__color)
 
