@@ -1,7 +1,7 @@
-# color-button
+# pyqt-color-button
 Circle-shaped color button
 
-## Class and method overview
+## Class and Method Overview
 
 You can make a new instance of ColorButton like below.
 
@@ -20,7 +20,8 @@ There is `colorChanged(QColor)` signal to detect the color of box changed.
 
 ## Preview
 
-![colorButtonExample](./example/colorButtonExample.png)
+![image](https://user-images.githubusercontent.com/55078043/160053919-29dc6e08-4709-4d5e-8f6d-74a20f365357.png)
+
 
 
 
