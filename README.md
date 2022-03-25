@@ -1,6 +1,12 @@
 # pyqt-color-button
 Circle-shaped color button
 
+## Requirements
+* PyQt5 >= 5.8
+
+## Setup
+```pip3 install git+https://github.com/yjg30737/pyqt-color-button.git --upgrade```
+
 ## Class and Method Overview
 
 You can make a new instance of ColorButton like below.
