@@ -9,11 +9,11 @@ Circle-shaped color button
 
 ## Class and Method Overview
 
+Constructor - `ColorButton(size=20, r=255, g=255, b=255)`
+
 You can make a new instance of ColorButton like below.
 
-`btn = ColorButton(size=30, color='red')`
-
-`btn = ColorButton(size=40, color='#000000')`
+`btn = ColorButton(size=40, r=0, g=0, b=0)`
 
 Size argument is value(px) of border-radius, color is value of background-color.
 
