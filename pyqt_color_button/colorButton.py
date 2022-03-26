@@ -6,15 +6,22 @@ from PyQt5.QtWidgets import QPushButton
 class ColorButton(QPushButton):
     colorChanged = pyqtSignal(QColor)
 
-    def __init__(self, size=20, color='white'):
+    def __init__(self, size=20, r=255, g=255, b=255):
         super().__init__()
-        self.__color = QColor(0, 0, 0)
-        self.__initUi(size, color)
+        self.__color = QColor(r, g, b)
+        self.__initUi(size)
 
-    def __initUi(self, size, color):
+    def __initUi(self, size):
         self.setFixedSize(size, size)
-        self.setStyleSheet('QPushButton { border-width:1px; border-radius:' + str(size//2) + '; '
-                           + 'background-color:' + color + '; }')
+        self.setStyleSheet(f'''
+                            QPushButton 
+                            {{
+                            border-width:1px; 
+                            border-radius: {str(size//2)};
+                            background-color: {self.__color.name()}; 
+                            }}
+                            '''
+                            )
 
     def setColor(self, rgb):
         if isinstance(rgb, tuple):
