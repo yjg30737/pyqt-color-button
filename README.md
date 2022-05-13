@@ -5,7 +5,7 @@ Circle-shaped color button
 * PyQt5 >= 5.8
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/pyqt-color-button.git --upgrade```
+`python -m pip install pyqt-color-button`
 
 ## Class and Method Overview
 
